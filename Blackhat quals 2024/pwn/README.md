@@ -33,7 +33,7 @@ So now we are thinking of a way to write /bin/sh into the binary, and that's pos
 
 the purple region is our writable space, for caution we will take 0x403000 + 100 = 0x0x403100
 
-# Our first SROP frmae for reading
+# Our first SROP frame for reading
 ```python
 POP_RAX = 0x0000000000401001
 SYSCALL_RET = 0x0000000000401a8b
